@@ -5,10 +5,6 @@ if (!defined('TYPO3_MODE')) {
 
 define('PATH_tx_plupload', t3lib_extMgm::extPath('plupload'));
 
-// XLCASS to modify the AJAX response:
-#$TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['typo3/classes/class.typo3_tcefile.php'] =
-#	PATH_tx_plupload . 'Classes/XClass/TYPO3_tcefile.php';
-
 // Hooks to use the PlUploader if enables in the user settings:
 $TYPO3_CONF_VARS['SC_OPTIONS']['typo3/backend.php']['constructPostProcess'][] =
 	'EXT:plupload/Classes/Hooks/BackendHook.php:tx_plupload_BackendHook->constructPostProcess';

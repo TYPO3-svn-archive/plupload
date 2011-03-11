@@ -2,3 +2,4 @@
 
 	* Intial remake of the the dropped PlUpload feature of TYPO3 4.5.0
 	* Fixed bug: Stylesheets are not loaded correctly
+	* Cleanup: Removed superfluous XCLASS file
