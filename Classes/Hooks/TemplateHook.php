@@ -30,10 +30,6 @@ class tx_plupload_TemplateHook extends tx_plupload_AbstractHook implements t3lib
 	 */
 	public function preStartPageHook(array $configuration, template $parent) {
 		if ($this->isExecutionRequired($parent)) {
-			$styleSheetPath = $this->getRelativePath(self::DIR_StyleSheet, $parent->backPath);
-			$parent->getPageRenderer()->addCssFile($styleSheetPath . 'structure_module_file_upload.css');
-			$parent->getPageRenderer()->addCssFile($styleSheetPath . 'visual_module_file_upload.css');
-
 			$parent->JScodeArray['flashUploader'] = '
 				Ext.onReady(function() {
 					// monitor the button

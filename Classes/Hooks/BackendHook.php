@@ -46,6 +46,10 @@ class tx_plupload_BackendHook extends tx_plupload_AbstractHook implements t3lib_
 		$parent->addJavascriptFile($this->getRelativePath(self::DIR_JavaScript) . 'ext.ux.plupload.js');
 		$parent->addJavascriptFile($this->getRelativePath(self::DIR_JavaScript) . 'PluploadWindow.js');
 		$parent->addJavascript($this->getJavaScriptCode());
+
+		$styleSheetPath = $this->getRelativePath(self::DIR_StyleSheet);
+		$this->getPageRenderer()->addCssFile($styleSheetPath . 'structure_module_file_upload.css');
+		$this->getPageRenderer()->addCssFile($styleSheetPath . 'visual_module_file_upload.css');
 	}
 
 	/**
