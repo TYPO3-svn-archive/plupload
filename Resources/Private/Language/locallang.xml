@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for extension 'plupload'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="fileUpload_buttonStartUpload">Start Upload</label>
+			<label index="fileUpload_progressText">{2} of {1} file(s) uploaded (Speed: {5}/s)</label>
+			<label index="fileUpload_infoFileQueueEmpty">no files queued</label>
+			<label index="fileUpload_infoFileQueued">File queued</label>
+			<label index="fileUpload_infoFileFinished">Upload finished</label>
+			<label index="fileUpload_infoFileUploading">Uploading ({0}%)</label>
+
+			<label index="enableFlashUploader_label">Select Uploader</label>
+			<label index="enableFlashUploader.disable">Classic Form Upload</label>
+			<label index="enableFlashUploader.flash">Flash Uploader (requires Flash 9+)</label>
+			<label index="enableFlashUploader.plupload">Plupload (HTML5, Flash, Silverlight, Form)</label>
+
+<!--
+			<label index="option_enableFlashUploader_choose.alttitle">Select Uploader</label>
+			<label index="option_enableFlashUploader_choose.description">This option will let you choose which uploader should be used: a pure HTML4 upload form ("Classic"), a Flash-Uploader which requires Flash9+ or the most flexible Pluploader, which works with HTML5 on modern browsers, but provides fallback to Flash on non-HTML5 browsers or native HTML if not even Flash is available. Both Flash Uploader and Plupload allow you to select multiple files at once.</label>
+-->
+		</languageKey>
+	</data>
+</T3locallang>
